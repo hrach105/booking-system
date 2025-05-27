@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Վարսահարդարման Սրահ | CRM Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="logo" aria-label="Վարսահարդարման սրահի լոգո">Hair Salon</div>
+      <nav role="navigation" aria-label="Գլխավոր մենյու">
+        <a href="#services">Ծառայություններ</a>
+        <a href="#booking">Ամրագրում</a>
+      </nav>
+    </header>
+
+    <section class="top-banner" aria-label="Վարսահարդարման սրահի գլխավոր բազան">
+      Վարսահարդարման Սրահ
+    </section>
+
+    <main>
+      <section
+        class="services-section"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <h2 id="services-title">Ծառայությունների ցանկ</h2>
+        <div
+          class="services-list"
+          role="list"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <article class="service-item" role="listitem">
+            <div class="service-name">Սանրվածք</div>
+            <div class="service-price">5000 AMD</div>
+          </article>
+          <article class="service-item" role="listitem">
+            <div class="service-name">Ներկում</div>
+            <div class="service-price">10000 AMD</div>
+          </article>
+          <article class="service-item" role="listitem">
+            <div class="service-name">Խնամք</div>
+            <div class="service-price">7000 AMD</div>
+          </article>
+          <article class="service-item" role="listitem">
+            <div class="service-name">Արտամղում</div>
+            <div class="service-price">6500 AMD</div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="booking-section"
+        id="booking"
+        aria-labelledby="booking-title"
+      >
+        <h2 id="booking-title">Ամրագրում</h2>
+        <form
+          method="post"
+          action="https://formspree.io/f/movdoppl"
+          aria-describedby="booking-desc"
+        >
+          <label for="clientName">Անուն և Ազգանուն</label>
+          <input
+            type="text"
+            id="clientName"
+            name="clientName"
+            placeholder="Մուտքագրեք ձեր անունը"
+            required
+            autocomplete="name"
+            aria-required="true"
+          />
+
+          <label for="phone">Հեռախոսահամար</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+374 99 123456"
+            pattern="^\+374\s?\d{2}\s?\d{3}\s?\d{3}$"
+            required
+            autocomplete="tel"
+            aria-required="true"
+          />
+
+          <label for="date">Ամրագրման Ամսաթիվ</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+            aria-required="true"
+            min=""
+          />
+
+          <label for="time">Ամրագրման Ժամանակ</label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+            required
+            aria-required="true"
+          />
+
+          <label>Ծառայություններ</label>
+          <div
+            class="checkbox-group"
+            role="group"
+            aria-label="Ընտրեք ծառայություններ"
+          >
+            <label
+              ><input type="checkbox" name="services" value="Սանրվածք" />
+              Սանրվածք</label
+            >
+            <label
+              ><input type="checkbox" name="services" value="Ներկում" />
+              Ներկում</label
+            >
+            <label
+              ><input type="checkbox" name="services" value="Խնամք" />
+              Խնամք</label
+            >
+            <label
+              ><input type="checkbox" name="services" value="Արտամղում" />
+              Արտամղում</label
+            >
+          </div>
+
+          <button type="submit" aria-label="Ամրագրել ծառայությունը">
+            Ամրագրել
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Hair Salon - Բոլոր իրավունքները պաշտպանված են</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
