@@ -32,21 +32,108 @@
           aria-live="polite"
           aria-atomic="true"
         >
-          <article class="service-item" role="listitem">
-            <div class="service-name">Սանրվածք</div>
+          <!-- Վարսահարդարում -->
+          <article class="service-item">
+            <div class="service-name">Սանրվածք (կանանց)</div>
             <div class="service-price">5000 AMD</div>
           </article>
-          <article class="service-item" role="listitem">
-            <div class="service-name">Ներկում</div>
+          <article class="service-item">
+            <div class="service-name">Սանրվածք (տղամարդկանց)</div>
+            <div class="service-price">3000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Մանկական սանրվածք</div>
+            <div class="service-price">2500 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Ներկում (մեկ գույն)</div>
             <div class="service-price">10000 AMD</div>
           </article>
-          <article class="service-item" role="listitem">
-            <div class="service-name">Խնամք</div>
+          <article class="service-item">
+            <div class="service-name">Ներկում (օմբրե/բալայաժ)</div>
+            <div class="service-price">15000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Մազերի ուղղում</div>
+            <div class="service-price">6500 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Հարսանեկան սանրվածք</div>
+            <div class="service-price">20000 AMD</div>
+          </article>
+
+          <!-- Մազերի խնամք -->
+          <article class="service-item">
+            <div class="service-name">Մազերի խնամք (կերատին)</div>
+            <div class="service-price">12000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Խնամքի դիմակ</div>
             <div class="service-price">7000 AMD</div>
           </article>
-          <article class="service-item" role="listitem">
-            <div class="service-name">Արտամղում</div>
-            <div class="service-price">6500 AMD</div>
+
+          <!-- Մանիկյուր / Պեդիկյուր -->
+          <article class="service-item">
+            <div class="service-name">Մանիկյուր (սովորական)</div>
+            <div class="service-price">4000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Մանիկյուր (գել)</div>
+            <div class="service-price">6000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Պեդիկյուր (սովորական)</div>
+            <div class="service-price">5000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Պեդիկյուր (գել)</div>
+            <div class="service-price">7000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Ձեռքերի և ոտքերի կոմպլեկտ</div>
+            <div class="service-price">10000 AMD</div>
+          </article>
+
+          <!-- Դիմահարդարում -->
+          <article class="service-item">
+            <div class="service-name">Օրինական դիմահարդարում</div>
+            <div class="service-price">8000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Տոնական դիմահարդարում</div>
+            <div class="service-price">10000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Հարսանեկան դիմահարդարում</div>
+            <div class="service-price">15000 AMD</div>
+          </article>
+
+          <!-- Մաշկի խնամք -->
+          <article class="service-item">
+            <div class="service-name">Մակերևութային մաքրում</div>
+            <div class="service-price">7000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Խորը մաքրում</div>
+            <div class="service-price">10000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Դիմակ և խոնավեցում</div>
+            <div class="service-price">6000 AMD</div>
+          </article>
+
+          <!-- Հոնքերի/թարթիչների խնամք -->
+          <article class="service-item">
+            <div class="service-name">Հոնքերի ձևավորում</div>
+            <div class="service-price">2000 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Հոնքերի ներկում</div>
+            <div class="service-price">2500 AMD</div>
+          </article>
+          <article class="service-item">
+            <div class="service-name">Թարթիչների երկարացում</div>
+            <div class="service-price">10000 AMD</div>
           </article>
         </div>
       </section>
@@ -57,81 +144,17 @@
         aria-labelledby="booking-title"
       >
         <h2 id="booking-title">Ամրագրում</h2>
-        <form
-          method="post"
-          action="https://formspree.io/f/movdoppl"
-          aria-describedby="booking-desc"
-        >
-          <label for="clientName">Անուն և Ազգանուն</label>
-          <input
-            type="text"
-            id="clientName"
-            name="clientName"
-            placeholder="Մուտքագրեք ձեր անունը"
-            required
-            autocomplete="name"
-            aria-required="true"
-          />
-
-          <label for="phone">Հեռախոսահամար</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+374 99 123456"
-            pattern="^\+374\s?\d{2}\s?\d{3}\s?\d{3}$"
-            required
-            autocomplete="tel"
-            aria-required="true"
-          />
-
-          <label for="date">Ամրագրման Ամսաթիվ</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            required
-            aria-required="true"
-            min=""
-          />
-
-          <label for="time">Ամրագրման Ժամանակ</label>
-          <input
-            type="time"
-            id="time"
-            name="time"
-            required
-            aria-required="true"
-          />
-
-          <label>Ծառայություններ</label>
-          <div
-            class="checkbox-group"
-            role="group"
-            aria-label="Ընտրեք ծառայություններ"
-          >
-            <label
-              ><input type="checkbox" name="services" value="Սանրվածք" />
-              Սանրվածք</label
-            >
-            <label
-              ><input type="checkbox" name="services" value="Ներկում" />
-              Ներկում</label
-            >
-            <label
-              ><input type="checkbox" name="services" value="Խնամք" />
-              Խնամք</label
-            >
-            <label
-              ><input type="checkbox" name="services" value="Արտամղում" />
-              Արտամղում</label
-            >
-          </div>
-
-          <button type="submit" aria-label="Ամրագրել ծառայությունը">
-            Ամրագրել
-          </button>
-        </form>
+        <!-- Calendly Embed -->
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/hrachkhachatryan1995/z"
+          style="min-width: 320px; height: 630px"
+        ></div>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
       </section>
     </main>
 
