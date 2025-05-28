@@ -111,3 +111,10 @@ footer {
   color: #777;
   margin-top: 2rem;
 }
+
+@media (max-width: 991px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
