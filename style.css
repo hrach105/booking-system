@@ -59,23 +59,27 @@ nav a:hover {
 
 .services-section,
 .booking-section {
-  padding: 3rem 2rem;
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
 }
-
+main {
+  display: grid;
+  grid-template-columns: 500px auto;
+}
 h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
   color: var(--primary-color);
 }
-
+.services-section .services-list {
+  max-height: 630px;
+  overflow: auto;
+  padding-right: 16px;
+}
 .services-list {
   display: grid;
   gap: 1.5rem;
-  max-height: 500px;
-  overflow: auto;
 }
 
 .service-item {
